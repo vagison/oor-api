@@ -57,4 +57,4 @@ https://www.postman.com/crimson-zodiac-594208/workspace/oor-api/request/24141310
 
 The request names are self-explanatory, and any additional information can be found within the requests themselves.
 
-Note that the global variable "apiURL" should be manually set in your Postman client according to your usage (default is http://localhost:3000).
+Note that the local variable "apiURL" should be manually set in your Postman client according to your usage (default is http://localhost:3000).

@@ -1,6 +1,5 @@
 import mongoose from 'mongoose'
 
-// defining model schema
 const LocationSchema = new mongoose.Schema({
   name: {
     type: String,
@@ -33,7 +32,6 @@ const LocationSchema = new mongoose.Schema({
   },
 })
 
-// creating model
 const Location = mongoose.model('Location', LocationSchema)
 
 export default Location

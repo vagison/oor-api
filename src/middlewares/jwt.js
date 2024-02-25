@@ -5,16 +5,15 @@ import { errorMessagesConstants } from '../constants'
 
 export default (req, res, next) =>
   passport.authenticate('jwt', { session: false }, (err, user) => {
-    if (!req.openAccess) {
-      if (err) {
-        return next(err)
-      }
-      if (!user) {
-        throw createError.Unauthorized(errorMessagesConstants.User.AccessDenied)
-      }
+    if (err) {
+      return next(err)
     }
 
-    // Forward user information to the next middleware
+    if (!user) {
+      throw createError.Unauthorized(errorMessagesConstants.User.AccessDenied)
+    }
+
     req.user = user
+
     return next()
   })(req, res, next)
