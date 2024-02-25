@@ -24,17 +24,7 @@ To run the API, follow these steps:
 
 ## Environment Configuration
 
-Create a .env file in the root of the project and configure the following environment variables:
-NODE_ENV=
-PORT=
-DB_DEBUG=
-DB_CLUSTER=
-DB_USER=
-DB_PASSWORD=
-DB_NAME=
-JWT_SECRET=
-
-Make sure to replace the values with your specific configuration.
+Create a .env file in the root of the project and configure the environment variables as described in .env.dist:
 
 ## API description
 
