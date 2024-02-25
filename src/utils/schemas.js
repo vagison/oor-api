@@ -129,11 +129,6 @@ const locationValidatorSchemaForUpdate = {
   description: {
     optional: { options: { nullable: true } },
     isString: { errorMessage: errorMessagesConstants.Location.InvalidDescription },
-    isLength: {
-      options: {
-        min: 1,
-      },
-    },
   },
   category: {
     optional: { options: { nullable: true } },
