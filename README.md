@@ -28,8 +28,7 @@ Create a .env file in the root of the project and configure the environment vari
 
 ## API description
 
-app.js is the entry point of the app. It starts the server, initiates the connection to the database and more:
---------------------------------------------------------------------------------------------------------------
+app.js is the entry point of the app. It starts the server, initiates the the database connection and more:
 
 The folder structure of the project is self explanatory. Here's a brief introduction to it:
 -------------------------------------------------------------------------------------------
