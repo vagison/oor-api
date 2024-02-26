@@ -24,6 +24,10 @@ const getById = async (req, res, next) => {
   try {
     const location = await Location.findById(req.params._id).lean()
 
+    if (!location) {
+      throw createError.NotFound(errorMessagesConstants.Location.NotFound)
+    }
+
     return res.status(200).json({ ...location })
   } catch (error) {
     next(error)
@@ -68,6 +72,10 @@ const updateById = async (req, res, next) => {
 
     const location = await Location.findByIdAndUpdate(req.params._id, data, { new: true })
 
+    if (!location) {
+      throw createError.NotFound(errorMessagesConstants.Location.NotFound)
+    }
+
     return res.status(200).json({ message: responseMessagesConstants.Location.Updated, _id: location._id })
   } catch (error) {
     next(error)
@@ -96,7 +104,11 @@ const updateMany = async (req, res, next) => {
 
 const deleteById = async (req, res, next) => {
   try {
-    await Location.findByIdAndDelete(req.params._id)
+    const location = await Location.findByIdAndDelete(req.params._id)
+
+    if (!location) {
+      throw createError.NotFound(errorMessagesConstants.Location.NotFound)
+    }
 
     return res.status(200).json({ message: responseMessagesConstants.Location.Deleted })
   } catch (error) {

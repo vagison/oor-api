@@ -11,6 +11,7 @@ const constants = {
     InvalidLatitude: 'Invalid location latitude value',
     InvalidLongitude: 'Invalid location longitude value',
     InvalidInitialCategory: 'Invalid initial category value to update locations',
+    NotFound: 'Location not found',
   },
 }
 
