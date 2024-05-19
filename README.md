@@ -53,7 +53,7 @@ Server-side entities
 
 To use the endpoints, you can visit the Postman URL below and then either fork or download the collection:
 
-https://www.postman.com/crimson-zodiac-594208/workspace/oor-api/request/24141310-e93a778f-6a19-4f30-b5bb-cb763246ae1f
+https://www.postman.com/grey-equinox-5383/workspace/oor/collection/24141891-1b38c5d3-3e3c-45a6-9209-fc53816f5159
 
 The request names are self-explanatory, and any additional information can be found within the requests themselves.
 
